@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CocoonBreak - 信息茧房破解工具</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🦋 CocoonBreak</h1>
+            <p class="subtitle">信息茧房破解工具</p>
+        </header>
+
+        <section class="api-config">
+            <h2>API 配置</h2>
+            <div class="input-group">
+                <label for="api-key">OpenAI API Key:</label>
+                <input type="password" id="api-key" placeholder="sk-...">
+            </div>
+        </section>
+
+        <section class="main-controls">
+            <button id="fetch-btn" class="btn btn-primary">获取推荐内容</button>
+            <button id="analyze-btn" class="btn btn-secondary" disabled>分析内容</button>
+            <button id="reverse-search-btn" class="btn btn-accent" disabled>生成反向搜索</button>
+            <button id="start-break-btn" class="btn btn-success" disabled>开始破解茧房</button>
+        </section>
+
+        <section class="content-section">
+            <h2>推荐内容</h2>
+            <div id="recommendations" class="video-grid">
+                <p class="placeholder">点击"获取推荐内容"开始</p>
+            </div>
+        </section>
+
+        <section class="analysis-section">
+            <h2>内容分析</h2>
+            <div id="analysis" class="analysis-content">
+                <p class="placeholder">等待分析结果...</p>
+            </div>
+        </section>
+
+        <section class="reverse-search-section">
+            <h2>反向搜索策略</h2>
+            <div id="reverse-search" class="search-content">
+                <p class="placeholder">等待搜索策略生成...</p>
+            </div>
+        </section>
+
+        <section class="progress-section">
+            <h2>破解进度</h2>
+            <div id="progress" class="progress-content">
+                <div class="progress-bar">
+                    <div id="progress-bar-fill" class="progress-bar-fill"></div>
+                </div>
+                <div id="progress-status" class="progress-status">准备就绪</div>
+                <div id="progress-videos" class="progress-videos"></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
