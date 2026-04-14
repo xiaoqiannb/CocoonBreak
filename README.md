@@ -106,10 +106,6 @@ CocoonBreak/
 - 建议在稳定的网络环境下使用
 - 遵守 Bilibili 的使用条款
 
-## 许可证
-
-MIT License
-
 ## 贡献
 
 欢迎提交 Issue 和 Pull Request！
